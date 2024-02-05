@@ -1,6 +1,6 @@
 {
   "name": "typesense-collection-schema-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility to generate a first-draft Typesense Collection schema given a JSON sample object",
   "main": "bin/index.js",
   "bin": "bin/index.js",
