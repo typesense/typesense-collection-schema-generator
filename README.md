@@ -16,7 +16,14 @@ An input JSON file like this:
   "organization_name": "Acme Inc",
   "country": "USA",
   "full_name": "John Herrero",
-  "address": "123 ABC Street",
+  "address_string": "123 ABC Street",
+  "address": {
+    "line1": "123 ABC Street"
+  },
+  "addresses": [
+    {"line1": "123 ABC Street"},
+    {"line1": "234 ABC Street"}
+  ],
   "tags": ["TagA", "TagB", "TagC"]
 }
 ```
@@ -30,7 +37,9 @@ Will generate an output schema like this:
     { "name": "organization_name", "type": "string", "optional": true },
     { "name": "country", "type": "string", "optional": true },
     { "name": "full_name", "type": "string", "optional": true },
-    { "name": "address", "type": "string", "optional": true },
+    { "name": "address_string", "type": "string", "optional": true },
+    { "name": "address", "type": "object", "optional": true },
+    { "name": "addresses", "type": "object[]", "optional": true },
     { "name": "tags", "type": "string[]", "optional": true }
   ]
 }
