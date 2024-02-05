@@ -36,4 +36,5 @@ Will generate an output schema like this:
 }
 ```
 
-You want to review the generated schema, add `facet: true` for any facet fields, remove any un-indexed fields, or consider using auto-schema detection. 
+> [!IMPORTANT]  
+> This schema is not meant to be used as-is. You want to review the generated schema, add `facet: true` for any facet fields, remove any un-indexed fields, or consider using auto-schema detection. Consider using regex field names for repeated field definitions. 
