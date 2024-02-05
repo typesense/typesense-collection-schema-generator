@@ -1,0 +1,34 @@
+{
+  "name": "typesense-collection-schema-generator",
+  "version": "1.0.0",
+  "description": "A utility to generate a first-draft Typesense Collection schema given a JSON sample object",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typesense/typesense-collection-schema-generator.git"
+  },
+  "keywords": [
+    "typesense",
+    "collection",
+    "schema"
+  ],
+  "author": "Typesense, Inc.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/typesense/typesense-collection-schema-generator/issues"
+  },
+  "homepage": "https://github.com/typesense/typesense-collection-schema-generator#readme",
+  "engines": {
+    "node": "20"
+  },
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.2",
+    "prettier": "3.1.1"
+  }
+}
